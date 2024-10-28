@@ -1,0 +1,97 @@
+body {
+    font-family: "Teko", sans-serif;
+    margin: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 150px;
+    height: 90%; 
+    background-color: #ffebf0;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    position: fixed; 
+    text-decoration: none;
+}
+
+section {
+    margin-left: 220px; 
+    padding: 20px;
+    flex: 1;
+}
+
+nav h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555f69;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #fcebeb;
+}
+
+code {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
