@@ -1,25 +1,29 @@
 body {
     font-family: "Teko", sans-serif;
-    margin: 10;
+    margin: 0; 
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
 nav {
-    width: 150px;
-    height: 90%; 
+    width: 100%; 
+    height: auto; 
     background-color: #ffebf0;
     border-right: 1px solid #ddd;
     padding: 20px;
     position: fixed; 
     text-decoration: none;
+    display: flex;
+    flex-direction: column; 
+    box-sizing: border-box;
+    overflow-y: auto; 
 }
 
 section {
-    margin-left: 220px; 
+    margin-top: 150px; 
     padding: 20px;
-    flex: 1;
+    overflow-x: auto; 
 }
 
 nav h1 {
@@ -96,3 +100,5 @@ footer {
     border-top: 1px solid #ddd; 
     margin-top: auto; 
 }
+
+
