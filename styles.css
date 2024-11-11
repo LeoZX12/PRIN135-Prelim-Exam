@@ -88,10 +88,11 @@ a:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffebf0; 
+    position: relative; 
+    width: 80%; 
+    border-top: 1px solid #ddd; 
+    margin-top: auto; 
 }
