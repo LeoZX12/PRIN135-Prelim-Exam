@@ -1,25 +1,29 @@
 body {
     font-family: "Teko", sans-serif;
-    margin: 10;
+    margin: 0; 
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
 nav {
-    width: 150px;
-    height: 90%; 
+    width: 100%; 
+    height: auto; 
     background-color: #ffebf0;
     border-right: 1px solid #ddd;
     padding: 20px;
     position: fixed; 
     text-decoration: none;
+    display: flex;
+    flex-direction: column; 
+    box-sizing: border-box;
+    overflow-y: auto; 
 }
 
 section {
-    margin-left: 220px; 
+    margin-top: 150px; 
     padding: 20px;
-    flex: 1;
+    overflow-x: auto; 
 }
 
 nav h1 {
@@ -88,10 +92,38 @@ a:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffebf0; 
+    position: relative; 
+    width: 80%; 
+    border-top: 1px solid #ddd; 
+    margin-top: auto; 
+}
+
+@media (min-width: 426px) {
+    nav {
+        height: 100%; 
+        width: 200px; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        overflow-y: auto; 
+    }
+
+    section {
+        margin-left: 220px; 
+    }
+}
+
+@media (max-width: 425px) {
+    nav {
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+    }
+
+    section {
+        margin-left: 0; 
+    }
 }
