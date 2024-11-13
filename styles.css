@@ -1,29 +1,29 @@
 body {
     font-family: "Teko", sans-serif;
-    margin: 0; 
+    margin: 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
 nav {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
     background-color: #ffebf0;
-    border-right: 1px solid #ddd;
     padding: 20px;
-    position: fixed; 
-    text-decoration: none;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     box-sizing: border-box;
+}
+
+.nav-links {
+    max-height: 200px; 
     overflow-y: auto; 
 }
 
 section {
-    margin-top: 150px; 
+    margin-top: 150px;
     padding: 20px;
-    overflow-x: auto; 
+    overflow-x: auto;
 }
 
 nav h1 {
@@ -44,6 +44,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
+    font-size: larger;
 }
 
 nav ul li a:hover {
@@ -94,36 +95,43 @@ a:hover {
 footer {
     text-align: left;
     padding: 10px;
-    background-color: #ffebf0; 
-    position: relative; 
-    width: 80%; 
-    border-top: 1px solid #ddd; 
-    margin-top: auto; 
+    background-color: #ffebf0;
+    position: relative;
+    width: 80%;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
 }
 
 @media (min-width: 426px) {
     nav {
-        height: 100%; 
-        width: 200px; 
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        overflow-y: auto; 
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     section {
-        margin-left: 220px; 
+        margin-left: 220px;
     }
 }
 
 @media (max-width: 425px) {
     nav {
-        width: 100%; 
-        height: auto; 
-        position: relative; 
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 150px;
+        overflow-y: auto;
+    }
+
+    .nav-links {
+        max-height: 100px;
+        overflow-y: auto;
     }
 
     section {
-        margin-left: 0; 
+        margin-top: 170px;
     }
 }
